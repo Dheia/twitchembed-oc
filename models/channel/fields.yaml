@@ -1,0 +1,30 @@
+fields:
+    channel:
+        label: Channel
+        span: full
+        required: 1
+        type: text
+    width:
+        label: Width
+        span: auto
+        default: '854'
+        type: number
+    height:
+        label: Height
+        span: auto
+        default: '480'
+        type: number
+    parent:
+        label: Parent
+        span: auto
+        placeholder: 'embed.example.com, othersite.example.com'
+        type: text
+        comment: 'Only needed if this page is going to be embedded on other websites'
+    theme:
+        label: Theme
+        span: auto
+        showSearch: true
+        options:
+            light: light
+            dark: dark
+        type: dropdown

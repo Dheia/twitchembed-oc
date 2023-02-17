@@ -1,0 +1,24 @@
+plugin:
+    name: 'nielsvandendries.twitchembed::lang.plugin.name'
+    description: 'nielsvandendries.twitchembed::lang.plugin.description'
+    author: 'Niels van den Dries'
+    icon: oc-icon-video-camera
+    homepage: 'https://nvandendries.nl'
+permissions:
+    channels:
+        tab: 'nielsvandendries.twitchembed::lang.plugin.name'
+        label: Channels
+navigation:
+    main-menu-item:
+        label: 'nielsvandendries.twitchembed::lang.plugin.name'
+        url: /
+        icon: icon-twitch
+        permissions:
+            - channels
+        sideMenu:
+            side-menu-item:
+                label: Channels
+                url: nielsvandendries/twitchembed/channels
+                icon: icon-video-camera
+                permissions:
+                    - channels
