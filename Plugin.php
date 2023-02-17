@@ -1,5 +1,8 @@
 <?php namespace NielsVanDenDries\Twitchembed;
 
+// This Plugin is created for OctoberCMS v3 by NvandenDries.nl
+
+
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
