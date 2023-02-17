@@ -8,6 +8,9 @@ permissions:
     channels:
         tab: 'nielsvandendries.twitchembed::lang.plugin.name'
         label: Channels
+    vod:
+        tab: 'nielsvandendries.twitchembed::lang.plugin.name'
+        label: VOD
 navigation:
     main-menu-item:
         label: 'nielsvandendries.twitchembed::lang.plugin.name'
@@ -22,3 +25,9 @@ navigation:
                 icon: icon-video-camera
                 permissions:
                     - channels
+            side-menu-item2:
+                label: VOD
+                url: nielsvandendries/twitchembed/vod
+                icon: icon-play-circle
+                permissions:
+                    - vod

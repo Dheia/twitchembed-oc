@@ -1,0 +1,33 @@
+fields:
+    title:
+        label: Title
+        span: full
+        required: 1
+        type: text
+    video:
+        label: Video
+        span: auto
+        required: 1
+        type: text
+        comment: 'channel, video, or collection'
+    height:
+        label: Height
+        span: auto
+        default: '720'
+        type: number
+    width:
+        label: Width
+        span: auto
+        default: '1280'
+        type: number
+    parent:
+        label: Parent
+        span: auto
+        required: 1
+        type: text
+        comment: '(required) Domain(s) that will be embedding Twitch. You must have one parent key for each domain your site uses.'
+    time:
+        label: 'Start playback at:'
+        span: auto
+        type: text
+        comment: 'Time in the video where playback starts. Specifies hours, minutes, and seconds. Default: 0h0m0s (the start of the video).'
