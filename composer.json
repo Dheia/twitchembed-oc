@@ -1,5 +1,5 @@
 {
-    "name": "nielsvandendries/twitchembed",
+    "name": "nielsvandendries/twitchembed-plugin",
     "type": "october-plugin",
     "description": "Embed your favorite twich channels on your site with ease",
     "authors": [
