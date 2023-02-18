@@ -21,3 +21,6 @@
 1.0.8:
     - 'Updated table nielsvandendries_twitchembed_channel'
     - builder_table_update_nielsvandendries_twitchembed_channel_3.php
+1.0.9:
+    - 'Updated table nielsvandendries_twitchembed_vod'
+    - builder_table_update_nielsvandendries_twitchembed_vod_3.php

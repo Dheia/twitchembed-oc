@@ -24,9 +24,6 @@ columns:
         label: updated_at
         type: datetime
         invisible: true
-    time:
-        label: time
-        type: text
     title:
         label: title
         type: text
