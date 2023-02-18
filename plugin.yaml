@@ -13,7 +13,7 @@ permissions:
         label: VOD
 navigation:
     main-menu-item:
-        label: 'nielsvandendries.twitchembed::lang.plugin.name'
+        label: 'Twitch Embed'
         url: /
         icon: icon-twitch
         permissions:
