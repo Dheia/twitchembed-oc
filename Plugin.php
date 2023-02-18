@@ -11,6 +11,7 @@ class Plugin extends PluginBase
     {
         return [
             '\Nielsvandendries\Twitchembed\Components\Channels' => 'Channels',
+            // '\Nielsvandendries\Twitchembed\Components\Clips' => 'Clips',
         ];
     }
 
