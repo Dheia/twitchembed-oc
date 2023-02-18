@@ -40,7 +40,6 @@ class Channels extends ComponentBase
 
     public function onRun()
     {
-        // $this->item = Channel::get()->toArray();
         $this->item = Channel::where('name', $this->property('name'))->get()->toArray();
     }
 }

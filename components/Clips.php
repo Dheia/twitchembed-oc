@@ -24,11 +24,23 @@ class Clips extends ComponentBase
      */
     public function defineProperties()
     {
-        return [];
+        return [
+            'video' => [
+                'title'             => 'Video Name',
+                'description'       => 'of your Clip defined in the Plugin',
+                'type'              => 'dropdown',
+            ]
+        ];
     }
+    
+    public function getvideoOptions()
+    {
+        return Vod::get()->lists('video', 'video');
+    }    
 
     public function onRun()
     {
-        $this->item = Vod::get()->toArray();
+        // $this->item = Vod::get()->toArray();
+        $this->item = Vod::where('video', $this->property('video'))->get()->toArray();
     }
 }
