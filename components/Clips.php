@@ -1,21 +1,21 @@
 <?php namespace Nielsvandendries\Twitchembed\Components;
 
 use Cms\Classes\ComponentBase;
-use Nielsvandendries\Twitchembed\Models\Clips;
+use Nielsvandendries\Twitchembed\Models\VOD;
 
 /**
  * Clips Component
  *
  * @link https://docs.octobercms.com/3.x/extend/cms-components.html
  */
-class Clip extends ComponentBase
+class Clips extends ComponentBase
 {
     public $item;
     public function componentDetails()
     {
         return [
-            'name' => 'clips Component',
-            'description' => 'No description provided yet...'
+            'name' => 'Twitch Clips',
+            'description' => 'Show your saved Twitch Clips'
         ];
     }
 
@@ -29,6 +29,6 @@ class Clip extends ComponentBase
 
     public function onRun()
     {
-        $this->item = Clips::get()->toArray();
+        $this->item = Vod::get()->toArray();
     }
 }

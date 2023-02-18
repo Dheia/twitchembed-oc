@@ -14,8 +14,8 @@ class Channels extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'Twitch Channels Select',
-            'description' => 'No description provided yet...'
+            'name' => 'Twitch Channels',
+            'description' => 'Show your live stream on your website'
         ];
     }
 

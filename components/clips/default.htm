@@ -1,3 +1,17 @@
-<p>This is the default markup for component clips</p>
+<!-- This Plugin is created for OctoberCMS v3 by NvandenDries.nl -->
 
-<small>You can delete this file if you want</small>
+{% set Clips = __SELF__.item %}
+{% for item in Clips %}
+<iframe
+    src="https://clips.twitch.tv/embed?clip={{ item.video }}&parent={{ item.parent }}"
+    height="{{ item.height }}"
+    width="{{ item.width }}"
+    allowfullscreen>
+</iframe>
+{% else %}
+<div class="no-data mt-3">
+  <div class="alert alert-danger" role="alert">
+    <i><i class="bi bi-exclamation-triangle"></i> No Twitch Clips Configured</i>
+  </div>
+</div>
+{% endfor %}
