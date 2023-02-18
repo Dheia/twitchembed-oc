@@ -26,3 +26,8 @@ fields:
         span: auto
         default: '854'
         type: number
+    hint1:
+        label: 'Go to the clip on twitch, in the URL bar you see the next url. https://www.twitch.tv/[CHANNELNAME]/clip/[CLIPCODE]  Where is: [CHANNELNAME] = You twitch username [CLIPCODE] = The code of the clip you need to copy'
+        span: auto
+        readOnly: 1
+        type: hint
