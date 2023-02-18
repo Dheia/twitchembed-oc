@@ -24,11 +24,23 @@ class Channels extends ComponentBase
      */
     public function defineProperties()
     {
-        return [];
+        return [
+            'name' => [
+                'title'             => 'name',
+                'description'       => 'of your Channel defined in the Plugin',
+                'type'              => 'dropdown',
+            ]
+        ];
+    }
+
+    public function getnameOptions()
+    {
+        return Channel::get()->lists('name', 'name');
     }
 
     public function onRun()
     {
-        $this->item = Channel::get()->toArray();
+        // $this->item = Channel::get()->toArray();
+        $this->item = Channel::where('name', $this->property('name'))->get()->toArray();
     }
 }

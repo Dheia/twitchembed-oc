@@ -1,4 +1,10 @@
 fields:
+    name:
+        label: Name
+        span: full
+        required: 1
+        type: text
+        comment: 'Needs to be unique'
     channel:
         label: Channel
         span: full
