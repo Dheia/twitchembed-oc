@@ -11,6 +11,9 @@ permissions:
     vod:
         tab: 'nielsvandendries.twitchembed::lang.plugin.name'
         label: VOD
+    resources:
+        tab: 'nielsvandendries.twitchembed::lang.plugin.name'
+        label: Resources
 navigation:
     main-menu-item:
         label: 'Twitch Embed'
@@ -31,3 +34,9 @@ navigation:
                 icon: icon-play-circle
                 permissions:
                     - vod
+            side-menu-item3:
+                label: Resources
+                url: nielsvandendries/twitchembed/resources
+                icon: icon-stack-overflow
+                permissions:
+                    - resources
