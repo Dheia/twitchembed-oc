@@ -9,7 +9,7 @@ columns:
     supplier_url:
         label: URL
         type: text
-        invisible: true
+        invisible: false
     supplier_info:
         label: Information
         type: text

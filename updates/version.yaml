@@ -42,3 +42,6 @@
 1.0.15:
     - 'Created table nielsvandendries_twitchembed_resources'
     - builder_table_create_nielsvandendries_twitchembed_resources.php
+1.0.16:
+    - 'Updated table nielsvandendries_twitchembed_resources'
+    - builder_table_update_nielsvandendries_twitchembed_resources_2.php
