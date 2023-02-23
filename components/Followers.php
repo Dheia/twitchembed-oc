@@ -9,11 +9,15 @@ use Cms\Classes\ComponentBase;
  */
 class Followers extends ComponentBase
 {
+    public $clientId;
+    public $authBearer;
+    public $broadcasterId;
+    public $followercount;
     public function componentDetails()
     {
         return [
-            'name' => 'followers Component',
-            'description' => 'No description provided yet...'
+            'name' => 'followers',
+            'description' => 'Shows followers'
         ];
     }
 
@@ -22,6 +26,40 @@ class Followers extends ComponentBase
      */
     public function defineProperties()
     {
-        return [];
+        return [
+            'clientId' => [
+                'title'             => 'Twitch API Client ID',
+                'description'       => 'Yout Twitch API Client ID',
+                'type'              => 'string',
+            ],
+            'authBearer' => [
+                'title'             => 'Bearer Token',
+                'description'       => 'Your Twitch Bearer Token',
+                'type'              => 'string',
+            ],
+            'broadcasterId' => [
+                'title'             => 'Broadcaster ID',
+                'description'       => 'Your Twitch broadcast ID',
+                'type'              => 'string',
+            ]
+        ];
+    }
+
+    public function getclientIdOptions()
+    {
+        return Vod::get()->lists('clientId', 'clientId');
+    }  
+    public function getauthBearerOptions()
+    {
+        return Vod::get()->lists('authBearer', 'authBearer');
+    }
+    public function getbroadcasterIdOptions()
+    {
+        return Vod::get()->lists('broadcasterId', 'broadcasterId');
+    }
+
+    public function onRun()
+    {
+        // run command connect to API twitch with given in backend
     }
 }
