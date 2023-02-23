@@ -42,6 +42,12 @@ fields:
         span: auto
         required: 0
         type: fileupload
+    resource_archive:
+        label: Archive
+        span: auto
+        'on': 'Yes'
+        'off': 'No'
+        type: switch
     supplier_info:
         label: 'Supplier info'
         size: large

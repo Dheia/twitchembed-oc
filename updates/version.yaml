@@ -45,3 +45,12 @@
 1.0.16:
     - 'Updated table nielsvandendries_twitchembed_resources'
     - builder_table_update_nielsvandendries_twitchembed_resources_2.php
+1.0.17:
+    - 'Updated table nielsvandendries_twitchembed_vod'
+    - builder_table_update_nielsvandendries_twitchembed_vod_4.php
+1.0.18:
+    - 'Updated table nielsvandendries_twitchembed_vod'
+    - builder_table_update_nielsvandendries_twitchembed_vod_5.php
+1.0.19:
+    - 'Updated table nielsvandendries_twitchembed_resources'
+    - builder_table_update_nielsvandendries_twitchembed_resources_3.php
