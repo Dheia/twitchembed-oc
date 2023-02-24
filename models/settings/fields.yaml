@@ -1,4 +1,9 @@
 fields:
+    partial2:
+        label: ''
+        span: full
+        path: $/nielsvandendries/twitchembed/partials/_alert.htm
+        type: partial
     username:
         label: Username
         span: auto

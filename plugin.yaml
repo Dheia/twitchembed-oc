@@ -44,7 +44,7 @@ navigation:
                 permissions:
                     - resources
             side-menu-item4:
-                label: Settings
+                label: 'Settings (Dev)'
                 url: nielsvandendries/twitchembed/settings
                 icon: icon-gears
                 permissions:
