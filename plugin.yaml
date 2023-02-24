@@ -14,6 +14,9 @@ permissions:
     resources:
         tab: 'nielsvandendries.twitchembed::lang.plugin.name'
         label: Resources
+    Manager:
+        tab: 'nielsvandendries.twitchembed::lang.plugin.name'
+        label: Manager
 navigation:
     main-menu-item:
         label: 'Twitch Embed'
@@ -40,3 +43,9 @@ navigation:
                 icon: icon-stack-overflow
                 permissions:
                     - resources
+            side-menu-item4:
+                label: Settings
+                url: nielsvandendries/twitchembed/settings
+                icon: icon-gears
+                permissions:
+                    - Manager
